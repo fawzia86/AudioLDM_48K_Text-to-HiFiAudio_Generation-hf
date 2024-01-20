@@ -241,7 +241,7 @@ with iface:
                     label="Change this value (any integer number) will lead to a different generation result.",
                 )
                 duration = gr.Slider(
-                    5, 15, value=10, step=2.5, label="Duration (seconds)"
+                    5, 120, value=10, step=2.5, label="Duration (seconds)"
                 )
                 guidance_scale = gr.Slider(
                     0,
