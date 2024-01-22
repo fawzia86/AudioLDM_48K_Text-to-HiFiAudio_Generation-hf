@@ -54,7 +54,7 @@ def text2audio(
         waveform = waveform[0]
     return waveform
 
-text2audio("Birds singing sweetly in a blooming garden.", 120, 3.5, 45, 3, default_checkpoint)
+text2audio("Birds singing sweetly in a blooming garden.", 10, 3.5, 45, 3, default_checkpoint)
 
 css = """
         a {
@@ -241,7 +241,7 @@ with iface:
                     label="Change this value (any integer number) will lead to a different generation result.",
                 )
                 duration = gr.Slider(
-                    125, 120, value=120, step=2.5, label="Duration (minutes)"
+                    50, 150, value=100, step=2.5, label="Duration (seconds)"
                 )
                 guidance_scale = gr.Slider(
                     0,
@@ -303,7 +303,7 @@ with iface:
             [
                 [
                     "Birds singing sweetly in a blooming garden.",
-                    120,
+                    10,
                     3.5,
                     45,
                     3,
@@ -311,7 +311,7 @@ with iface:
                 ],
                 [
                     "A modern synthesizer creating futuristic soundscapes.",
-                    120,
+                    10,
                     3.5,
                     45,
                     3,
@@ -319,7 +319,7 @@ with iface:
                 ],
                 [
                     "The vibrant beat of Brazilian samba drums.",
-                    120,
+                    10,
                     3.5,
                     45,
                     3,
